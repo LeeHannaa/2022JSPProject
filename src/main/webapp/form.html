@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */
+        .navbar {
+            margin-bottom: 50px;
+            border-radius: 0;
+        }
+
+        /* Remove the jumbotron's default bottom margin */
+        .jumbotron {
+            margin-bottom: 0;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1>Add your information</h1>
+        <p>Thank you</p>
+    </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">🐢</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Add page</a></li>
+                <li><a href="#">Edit page</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> my page</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container" style="width: 100%">
+    <form name="myForm" action="form_ok.jsp" method="post">
+        <div class="col-sm-4" style="width: 100%">
+            <div class="panel panel-primary" style="width: 100%">
+                <div class="panel-heading" style="width: 100%">개인 정보 입력</div>
+                <div>
+                    <fieldset style="margin: 10px">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name"><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"style="width: 200px"><br><br>
+                        <label for="birthday">Birthday:</label>
+                        <input type="date" id="birthday" name="birthday"><br><br>
+                        <br><br>
+                    </fieldset>
+                </div>
+                <br>
+                <div>
+                    <label for="address" style="margin :10px">Choose a address:</label>
+                    <select name="address" id="address" >
+                        <optgroup label="서울">
+                            <option value="Gangseo">강서구</option>
+                            <option value="Gangbuk">강북구</option>
+                            <option value="Eunpyeong">은평구</option>
+                            <option value="Gwanak">관악구</option>
+                            <option value="Seocho">서초구</option>
+                            <option value="Jung">중구</option>
+                            <option value="Yongsan">용산구</option>
+                        </optgroup>
+                        <optgroup label="대구">
+                            <option value="Dalseo">달서구</option>
+                            <option value="Su">서구</option>
+                            <option value="Suseong">수성구</option>
+                            <option value="Dong">동구</option>
+                            <option value="Nam">남구</option>
+                            <option value="Buk">북구</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <br>
+                <div style="margin: 10px">
+                    <br>
+                    <p>첫 번째</p>
+                    <textarea class="form-control" rows="3" name="buket1" ></textarea>
+                    <br>
+                    <p>두 번째</p>
+                    <textarea class="form-control" rows="3" name="buket2"></textarea>
+                </div>
+                <br>
+                <div style="margin: 10px">
+                    <label for="sel1" class="form-label" style="margin: 10px">함께한 시간 (select one):</label>
+                    <select class="form-select" id="sel1" name="sellist1">
+                        <option>1년 이하</option>
+                        <option>2년</option>
+                        <option>3년</option>
+                        <option>4년</option>
+                        <option>5년 이상</option>
+                    </select>
+                    <br>
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class = "form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" name="isCheck" value="1">
+            <label class="form-check-label" for="gridCheck">
+                Check me out
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3" style="float: right;">Submit</button>
+    </form>
+</div>
+
+
+
+<footer class="container-fluid text-center">
+    <p>소중한 정보를 주셔서 감사합니다.</p>
+</footer>
+
+</body>
+</html>
