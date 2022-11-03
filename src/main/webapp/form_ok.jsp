@@ -3,6 +3,8 @@
     request.setCharacterEncoding("UTF-8");
 
     String name = request.getParameter("name");
+    String university = request.getParameter("university");
+    String grade = request.getParameter("grade");
     String email = request.getParameter("email");
     String birthday = request.getParameter("birthday");
     String address = request.getParameter("address");
@@ -20,6 +22,8 @@
 <body>
 <h1>입력하신 정보는 다음과 같습니다.</h1>
 name : <%=name%> <br />
+university : <%=university%> <br />
+grade : <%=grade%> <br />
 email : <%=email%> <br />
 birthday : <%=birthday%> <br />
 address : <%=address%> <br />
